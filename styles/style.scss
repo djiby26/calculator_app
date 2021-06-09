@@ -1,0 +1,155 @@
+$desktop-size: 1440px;
+$mobile-size:  375px;
+$calc-width: 400px;
+
+$main-background1: hsl(222, 26%, 31%);
+$keypad-bg: hsl(223, 31%, 20%);
+$screen-bg: hsl(224, 36%, 15%);
+$dark-blue-kb: hsl(225, 21%, 49%);
+$dark-blue-ks: hsl(224, 28%, 35%);
+$red: hsl(6, 63%, 50%);
+$dark-red: hsl(6, 70%, 34%);
+$lgt-gray-orange: hsl(30, 25%, 89%);
+$grayish-orange: hsl(28, 16%, 65%);
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Spartan', sans-serif;
+    // width: $desktop-size;
+    background-color: $main-background1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calc{
+    width: $calc-width;
+    height: 500px;
+    // background-color: white;
+    display: flex;
+    row-gap: 1%;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: space-between;
+    margin-top: 70px;
+}
+
+.head{
+    height: 3rem;
+    width: $calc-width;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.txt-head{
+    color: white;
+    flex: 1 1;
+    text-align: start;
+    font-size: 2.4rem;
+}
+
+
+.toggle{
+    flex: 1 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.toggle{
+    p{
+        color: white;
+        font-size: 1rem;
+        margin-right: 20px;
+    }
+
+    button{
+        font-size: 1rem;
+        height: 25px;
+        width:70px
+    }
+}
+
+
+#screen-ipt{
+    margin-top: 20px;
+    height: 100px;
+    width: $calc-width;
+    border: none;
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+    background-color: $screen-bg;
+    border-radius: 10px;
+    text-align: right;
+}
+
+.keypad{
+    border-radius: 10px;
+    width: $calc-width;
+    height: 400px;
+    background-color: $keypad-bg;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 20px;
+    // column-gap: 10px;
+    
+    // grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.keypad{
+    p{
+        font-size: 2rem;
+    }
+}
+
+.keypad button:nth-child(4){
+    color: white;
+    background-color: $dark-blue-kb;
+    box-shadow: 2px 2px 2px 1px $dark-blue-ks ;
+    font-size: 2rem;
+    font-weight: 580;
+}
+
+.key{
+    font-size: 3rem;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px 1px $grayish-orange ;
+}
+
+.upper{
+    height: 5rem;
+    // width: 5rem;
+}
+
+.lower{
+    height: 4.5rem;
+    color: white;
+}
+
+.reset{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: $dark-blue-kb;
+   
+}
+
+.equal{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: $red;
+}
+
+

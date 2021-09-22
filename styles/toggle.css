@@ -1,0 +1,26 @@
+.toggle-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  height: 30px;
+  width: 90px;
+  border-radius: 50px;
+  background-color: #232c43;
+}
+
+.switch {
+  margin-left: 3px;
+  margin-right: 3px;
+  height: 80%;
+  width: 25%;
+  border-radius: 50%;
+  background-color: #d03f2f;
+}
+/*# sourceMappingURL=toggle.css.map */

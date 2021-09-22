@@ -1,0 +1,22 @@
+$toggle-background: hsl(223, 31%, 20%);
+$red: hsl(6, 63%, 50%);
+
+.toggle-button{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: auto;
+    height: 30px;
+    width: 90px;
+    border-radius: 50px;
+    background-color: $toggle-background;
+}
+
+.switch{
+    margin-left: 3px;
+    margin-right: 3px;
+    height: 80%;
+    width: 25%;
+    border-radius: 50%;
+    background-color: $red;
+}
